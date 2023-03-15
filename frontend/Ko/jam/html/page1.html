@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=100%, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+        <title>어디가지?뭐먹지?</title>
+    </head>
+
+    <style></style>
+
+    <body>
+        <div class="container">
+            <div class="item item-1 align-center">
+                
+            </div>
+            <div class="item item-2 align-center">
+                
+            </div>
+            <div class="item item-3 align-center">
+                <h1><div class="mainName">어디가지?<br>뭐먹지?</div></h1>
+                <h3><div class="question">지역을 선택해 주세요</div></h3>
+                <img class="image" src="../img/지도.jpg" alt="지도 선택">
+                <img class="gong" src="../img/background.png" alt="위치 조정">
+            </div>
+            <div class="item item-3 align-center">
+            
+            <input type="checkbox" id="checker">
+            <label for="checker">1구역</label>
+                
+            <input type="checkbox" id="myCheckbox1">
+            <label for="myCheckbox1">2구역</label>
+            
+
+            </div>
+            <div class="item item-3 align-center">
+                <button id="mainButton"
+                        onclick="location.href='page2.html'"
+                        th:onclick="|location.href='@{/location}'|"
+                >START</button>
+            </div>
+            <div class="item item-3 align-center">
+
+            </div>
+        </div>
+    </body>
+</html>
